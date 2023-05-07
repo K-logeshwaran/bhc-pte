@@ -1,0 +1,302 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+    font-size: 10px;
+}
+
+header {
+    background-image: url(/images/wp7758502-physical-education-wallpapers.jpg);
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* navigation main container  */
+.nav-container {
+    font-size: 4rem;
+    background-color: rgba(0, 0, 0, 0.826);
+    width: 100%;
+    height: 7rem;
+}
+nav {
+    display: block;
+    text-align: center;
+}
+
+/* top side logo div and image  */
+.college-logo {
+    margin-top: 0.2rem;
+    width: 25rem;
+    display: block;
+}
+.nav-college-logo {
+    background-color: rgba(255, 0, 0, 0);
+    float: left;
+    position: relative;
+}
+
+/* navigtion ul,li,a and button */
+.nav-bar-ul {
+    display: inline;
+    float: right;
+    position: relative;
+    text-align: center;
+    margin-top: 0.5rem;
+    transition-duration: 0.5s;
+}
+.nav-bar-li {
+    display: inline-block;
+    padding: 1rem;
+    font-weight: lighter;
+}
+.nav-bar-a {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: aliceblue;
+    transition-duration: 0.6s;
+}
+.nav-bar-li button a {
+    font-size: 1.2rem;
+}
+.nav-bar-button button {
+    background: #fb8500;
+    border: none;
+    color: white;
+    padding: 1.6rem;
+    text-align: center;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    letter-spacing: 0.1rem;
+}
+.nav-bar-button {
+    width: fit-content;
+    height: 7rem;
+    display: block;
+}
+/* hover for li,a and button  */
+.nav-bar-li:hover .nav-bar-a {
+    padding: 1.4rem;
+    font-size: 1.5rem;
+    color: #fb8500;
+}
+
+.nav-bar-button button:hover {
+    background-color: #ffb703;
+    color: #023047;
+}
+
+/* navigation bar sub list ul,li and a */
+
+.nav-bar-sub-ul {
+    position: absolute;
+    margin-top: 1.2rem;
+    margin-left: 1rem;
+    list-style: none;
+    border-radius: 0.2rem;
+    background-color: #000000c7;
+    padding: 0.8rem;
+    text-align: left;
+    display: none;
+}
+.nav-bar-sub-ul li {
+    display: block;
+    padding: 0.5rem;
+}
+.nav-bar-sub-ul a {
+    letter-spacing: 0.1rem;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition-duration: 0.3s;
+}
+
+/* hover for nav sub list ul,li and a */
+
+.nav-bar-sub-ul li:hover .nav-bar-sub-a {
+    color: #fb8500;
+    font-size: 1.3rem;
+    padding: 0.1rem;
+}
+
+.nav-bar-ul li:nth-child(2):hover .nav-bar-sub-ul {
+    display: block;
+    border-bottom: solid 0.3rem #fb8500;
+}
+.nav-bar-ul li:nth-child(3):hover .nav-bar-sub-ul {
+    display: block;
+    border-bottom: solid 0.3rem #fb8500;
+}
+
+.nav-bar-ul li:nth-child(4):hover .nav-bar-sub-ul {
+    display: block;
+    border-bottom: solid 0.3rem #fb8500;
+}
+.nav-bar-ul li:nth-child(5):hover .nav-bar-sub-ul {
+    display: block;
+    border-bottom: solid 0.3rem #fb8500;
+}
+
+.nav-bar-ul li:nth-child(7):hover .nav-bar-sub-ul {
+    display: block;
+    margin-right: 15rem;
+    width: max-content;
+    border-bottom: solid 0.3rem #fb8500;
+}
+
+.nav-bar-media-q {
+    display: none;
+    height: 6rem;
+}
+
+@media only screen and (max-width: 1300px) {
+    .nav-bar {
+        width: 100%;
+        height: 6rem;
+    }
+    .nav-container {
+        width: 100%;
+        height: 6rem;
+        font-size: 80px;
+    }
+    .nav-college-logo {
+        width: 20rem;
+        height: 6rem;
+    }
+    .college-logo {
+        width: 20rem;
+    }
+    .nav-bar-media-q {
+        display: block;
+        float: right;
+    }
+    .nav-bar-media-q-button button {
+        margin: 1rem;
+        display: block;
+        border-radius: 0.2rem;
+        background: #fb8500;
+        border: none;
+        color: white;
+        padding: 1.3rem;
+        text-align: center;
+        cursor: pointer;
+        letter-spacing: 0.2rem;
+        transition-duration: 0.5s;
+    }
+
+    .nav-bar-media-q-icon {
+        display: inline-block;
+        cursor: pointer;
+        padding: 1.1rem;
+        color: aliceblue;
+        margin-right: 1rem;
+        font-size: 20px;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 30px;
+        height: 3px;
+        background-color: hsl(0, 0%, 100%);
+        margin: 6px 0;
+        transition: 0.5s;
+    }
+
+    .change .bar1 {
+        background-color: #fb4f00;
+        transform: translate(0, 9px) rotate(-45deg);
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        background-color: #fb4f00;
+        transform: translate(0, -9px) rotate(45deg);
+    }
+
+    .nav-bar-media-q-button {
+        float: right;
+        margin-right: 2rem;
+    }
+    .nav-bar-media-q-button button:hover {
+        background-color: #ffb703;
+        color: #023047;
+    }
+
+    .change .nav-bar-ul {
+        background-color: #fb4f00;
+        display: block;
+    }
+
+    .nav-bar-ul {
+        background-color: rgba(15, 15, 15, 0.842);
+        width: 30rem;
+        height: fit-content;
+        position: absolute;
+        right: 0.1rem;
+        top: 5.5rem;
+        display: none;
+    }
+    .nav-bar-ul-show {
+        background-color: rgba(15, 15, 15, 0.842);
+        width: 30rem;
+        height: fit-content;
+        position: absolute;
+        right: 0.1rem;
+        top: 5.5rem;
+        display: block;
+    }
+    .nav-bar-li {
+        justify-content: left;
+        border-bottom: 2px solid white;
+        display: flex;
+    }
+    /* .nav-bar-sub-li{
+
+                        } */
+    .nav-bar-sub-ul {
+        width: 100%;
+        height: max-content;
+        position: relative;
+        top: 4rem;
+        right: 9rem;
+    }
+
+    .nav-bar-li:nth-child(9) {
+        display: none;
+    }
+}
+
+.fa-caret-right {
+    transition-duration: 0.8s;
+}
+
+.show-block {
+    display: none;
+}
+
+.nav-bar-ul li:nth-child(2):hover .fa-caret-right {
+    -ms-transform: rotate(90deg); /* IE 9 */
+    transform: rotate(90deg);
+}
+.nav-bar-ul li:nth-child(3):hover .fa-caret-right {
+    -ms-transform: rotate(90deg); /* IE 9 */
+    transform: rotate(90deg);
+}
+.nav-bar-ul li:nth-child(4):hover .fa-caret-right {
+    -ms-transform: rotate(90deg); /* IE 9 */
+    transform: rotate(90deg);
+}
+.nav-bar-ul li:nth-child(5):hover .fa-caret-right {
+    -ms-transform: rotate(90deg); /* IE 9 */
+    transform: rotate(90deg);
+}
+.nav-bar-ul li:nth-child(7):hover .fa-caret-right {
+    -ms-transform: rotate(90deg); /* IE 9 */
+    transform: rotate(90deg);
+}
