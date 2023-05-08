@@ -16,54 +16,47 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
     <title>Bishop Heber College Sports</title>
-   
 </head>
-
-<body>
-    <header>
-        <div class="nav-container">
+    <body>
+         <header class="frame">
+            <div class="nav-container">
 
             <!--Navigation Bar College Logo-->
             <div class="nav-college-logo">
                 <img class="college-logo" src="../images/bhc_PE_2.png" alt="college logo" />
-            </div>
+             </div>
+
             <nav class="nav-bar">
 
+                <!--Media Query-->
                 <div class="nav-bar-media-q">
-
-
+                    <!--Button For Media Query Screen 1500px to 280px -->
                     <div class="nav-bar-media-q-icon " onclick="myFunction(this)">
                         <div class="bar1"></div>
                         <div class="bar2"></div>
                         <div class="bar3"></div>
-
-
                     </div>
+                    <!--Function For Button Clicking-->
                     <script>
                         function myFunction(x) {
                             let y = document.getElementById("bar");
+                            let u =document.getElementById("reg-btn");
                             y.classList.toggle("nav-bar-ul-show");
                             x.classList.toggle("change");
+                            u.classList.toggle("nav-bar-ul-media-q-button-show");
                             console.log(y.classList);
                         }
 
-
-                        function w3_open() {
-                            document.getElementsByClassName("sidenav")[0].style.display = "block";
-                        }
-                        function w3_close() {
-                            document.getElementsByClassName("sidenav")[0].style.display = "none";
-                        }
-
-
-
                     </script>
-
-                    <div class="nav-bar-media-q-button">
-                        <button><a id="btn-registe-online">REGISTER ONLINE</a></button>
+                    <!--Register Button for Media Query-->
+                    <div id="reg-btn" class="nav-bar-media-q-button">
+                        <button><a id="btn-registe-online-media-q">REGISTER ONLINE</a></button>
                     </div>
                 </div>
+
+                <!--Navigation Bar For List-->
                 <div class="navigation-bar">
+
                     <ul class="nav-bar-ul " id="bar">
                         <!--HOME-->
                         <li class="nav-bar-li">
@@ -76,25 +69,25 @@
                                     aria-hidden="true"></i></a>
 
                             <ul class="nav-bar-sub-ul">
-                                <li>
+                                <li class="nav-bar-sub-li">
                                     <a class="nav-bar-sub-a" href="#">&#187; Who we are</a>
                                 </li>
-                                <li>
+                                <li class="nav-bar-sub-li">
                                     <a class="nav-bar-sub-a" href="#">&#187; Academy Tour</a>
                                 </li>
-                                <li>
+                                <li class="nav-bar-sub-li">
                                     <a class="nav-bar-sub-a" href="#">&#187; Testimonial</a>
                                 </li>
-                                <li>
+                                <li class="nav-bar-sub-li">
                                     <a class="nav-bar-sub-a" href="#">&#187; Advisory Bond</a>
                                 </li>
-                                <li>
+                                <li class="nav-bar-sub-li">
                                     <a class="nav-bar-sub-a" href="#">&#187; Sister Concern</a>
                                 </li>
-                                <li>
+                                <li class="nav-bar-sub-li">
                                     <a class="nav-bar-sub-a" href="#">&#187; Corporate Social Responsibility</a>
                                 </li>
-                                <li>
+                                <li class="nav-bar-sub-li">
                                     <a class="nav-bar-sub-a" href="#">&#187; Download Prospect</a>
                                 </li>
                             </ul>
@@ -105,15 +98,17 @@
                             <a class="nav-bar-a" href="#">ACADEMIES &nbsp;<i class="fa fa-caret-right"
                                     aria-hidden="true"></i></a>
                             <ul class="nav-bar-sub-ul">
-                                <li class="super">
+                                <li class="nav-bar-sub-li">
                                     <a class="nav-bar-sub-a" href="#">&#187; Cricket</a>
-                                </li>
-                                <li>
+                                </li >
+                                <li class="nav-bar-sub-li">
                                     <a class="nav-bar-sub-a" href="#">&#187; FootBall</a>
                                 </li>
-                                <li><a class="nav-bar-sub-a" href="#">&#187; Tennis</a></li>
-                                <li><a class="nav-bar-sub-a" href="#">&#187; Chess</a></li>
-                                <li>
+                                <li class="nav-bar-sub-li">
+                                    <a class="nav-bar-sub-a" href="#">&#187; Tennis</a></li>
+                                <li class="nav-bar-sub-li">
+                                    <a class="nav-bar-sub-a" href="#">&#187; Chess</a></li>
+                                <li class="nav-bar-sub-li">
                                     <a class="nav-bar-sub-a" href="#">&#187; Basketball</a>
                                 </li>
                             </ul>
@@ -124,15 +119,17 @@
                             <a class="nav-bar-a" href="#">INFRASTRUCTURE &nbsp;<i class="fa fa-caret-right"
                                     aria-hidden="true"></i></a>
                             <ul class="nav-bar-sub-ul">
-                                <li class="super">
+                                <li class="nav-bar-sub-li">
                                     <a class="nav-bar-sub-a" href="#">&#187; 200 MTS Track and FootBall</a>
                                 </li>
-                                <li>
+                                <li class="nav-bar-sub-li">
                                     <a class="nav-bar-sub-a" href="#">&#187; </a>
                                 </li>
-                                <li><a class="nav-bar-sub-a" href="#">&#187; Tennis</a></li>
-                                <li><a class="nav-bar-sub-a" href="#">&#187; Chess</a></li>
-                                <li>
+                                <li class="nav-bar-sub-li">
+                                    <a class="nav-bar-sub-a" href="#">&#187; Tennis</a></li>
+                                <li class="nav-bar-sub-li">
+                                    <a class="nav-bar-sub-a" href="#">&#187; Chess</a></li>
+                                <li class="nav-bar-sub-li">
                                     <a class="nav-bar-sub-a" href="#">&#187; Basketball</a>
                                 </li>
                             </ul>
@@ -143,10 +140,10 @@
                             <a class="nav-bar-a" href="#">ACHIEVEMENTS &nbsp;<i class="fa fa-caret-right"
                                     aria-hidden="true"></i></a>
                             <ul class="nav-bar-sub-ul">
-                                <li>
+                                <li class="nav-bar-sub-li">
                                     <a class="nav-bar-sub-a" href="#">&#187; Sports Achievements</a>
                                 </li>
-                                <li>
+                                <li class="nav-bar-sub-li">
                                     <a class="nav-bar-sub-a" href="#">&#187; Outdoor Achievements</a>
                                 </li>
                             </ul>
@@ -162,10 +159,12 @@
                             <a class="nav-bar-a" href="#">NEWS AND EVENTS &nbsp;<i class="fa fa-caret-right"
                                     aria-hidden="true"></i></a>
                             <ul class="nav-bar-sub-ul">
-                                <li>
+                                <li class="nav-bar-sub-li">
                                     <a class="nav-bar-sub-a" href="#">&#187; Media Coverage</a>
                                 </li>
-                                <li><a class="nav-bar-sub-a" href="#">&#187; Events</a></li>
+                                <li class="nav-bar-sub-li">
+                                    <a class="nav-bar-sub-a" href="#">&#187; Events</a>
+                                </li>
                             </ul>
                         </li>
 
@@ -175,12 +174,12 @@
 
                         </li>
 
-
-
                         <!--REGISTER ONLINE-->
                         <li class="nav-bar-li">
                             <div class="nav-bar-button">
-                                <button><a id="btn-registe-online">REGISTER ONLINE</a></button>
+                                <button class="nav-bar-btn" type="button">
+                                    <a id="btn-registe-online">REGISTER ONLINE</a>
+                                </button>
                             </div>
                         </li>
                     </ul>
@@ -193,7 +192,7 @@
             </nav>
         </div>
     </header>
-
+    
 </body>
 
 </html>

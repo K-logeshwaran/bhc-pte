@@ -9,39 +9,38 @@ header {
     background-image: url(/images/wp7758502-physical-education-wallpapers.jpg);
     width: 100%;
     height: 100vh;
-    background-attachment: fixed;
+    animation: image 40s infinite ease-in;
     background-size: cover;
     background-repeat: no-repeat;
 }
 /* navigation main container  */
 .nav-container {
-    font-size: 4rem;
-    background-color: rgba(0, 0, 0, 0.826);
     width: 100%;
     height: 7rem;
+    background-color: rgba(0, 0, 0, 0.826);
+    font-size: 4rem;
 }
 nav {
-    display: block;
-    text-align: center;
+    display:block;
 }
 
 /* top side logo div and image  */
 .college-logo {
-    margin-top: 0.2rem;
     width: 25rem;
     display: block;
+    margin-top: 0.2rem;
 }
 .nav-college-logo {
+    position:relative;
+    float:left;
     background-color: rgba(255, 0, 0, 0);
-    float: left;
-    position: relative;
 }
 
 /* navigtion ul,li,a and button */
 .nav-bar-ul {
     display: inline;
-    float: right;
     position: relative;
+    float: right;
     text-align: center;
     margin-top: 0.5rem;
     transition-duration: 0.5s;
@@ -152,6 +151,7 @@ nav {
 }
 
 @media only screen and (max-width: 1300px) {
+   
     .nav-bar {
         width: 100%;
         height: 6rem;
@@ -159,14 +159,13 @@ nav {
     .nav-container {
         width: 100%;
         height: 6rem;
-        font-size: 80px;
     }
     .nav-college-logo {
         width: 20rem;
         height: 6rem;
     }
     .college-logo {
-        width: 20rem;
+        width: 22rem;
     }
     .nav-bar-media-q {
         display: block;
@@ -176,6 +175,7 @@ nav {
         margin: 1rem;
         display: block;
         border-radius: 0.2rem;
+        font-weight: bold;
         background: #fb8500;
         border: none;
         color: white;
@@ -222,53 +222,195 @@ nav {
     .nav-bar-media-q-button {
         float: right;
         margin-right: 2rem;
+        
     }
+    .nav-bar-ul-media-q-button-show{
+        display: none;
+    }
+   
     .nav-bar-media-q-button button:hover {
         background-color: #ffb703;
         color: #023047;
     }
 
-    .change .nav-bar-ul {
-        background-color: #fb4f00;
-        display: block;
-    }
+    
 
     .nav-bar-ul {
-        background-color: rgba(15, 15, 15, 0.842);
-        width: 30rem;
         height: fit-content;
         position: absolute;
-        right: 0.1rem;
-        top: 5.5rem;
         display: none;
     }
     .nav-bar-ul-show {
-        background-color: rgba(15, 15, 15, 0.842);
-        width: 30rem;
+        background-color: rgba(0, 0, 0, 0.726);
+        width:26rem;
         height: fit-content;
         position: absolute;
         right: 0.1rem;
-        top: 5.5rem;
+        top: 5.7rem;
         display: block;
     }
+   
+
+    .nav-bar-ul li:nth-child(even):hover .nav-bar-sub-ul {
+        padding: 0rem;
+        border-bottom:none;
+    }
+    .nav-bar-ul li:nth-child(odd):hover .nav-bar-sub-ul {
+
+        border-bottom:none;
+    }
     .nav-bar-li {
-        justify-content: left;
-        border-bottom: 2px solid white;
-        display: flex;
+
+        border-bottom: 2px solid rgb(56, 56, 56);
+        display: block;
     }
     /* .nav-bar-sub-li{
 
                         } */
-    .nav-bar-sub-ul {
-        width: 100%;
+    .nav-bar-sub-ul{
+        width:max-content;
+       background-color:rgba(0, 0, 0, 0);
         height: max-content;
         position: relative;
-        top: 4rem;
-        right: 9rem;
+       
+
+        
+    
+    }
+    .nav-bar-sub-ul li{
+     padding:0.5rem;
     }
 
     .nav-bar-li:nth-child(9) {
         display: none;
+    }
+}
+
+@media only screen  and (max-width: 550px)  {
+    .nav-bar {
+        width: 100%;
+        height: 6rem;
+    }
+    .nav-container {
+        width: 100%;
+        height: 6rem;
+        font-size: 80px;
+    }
+    .nav-college-logo {
+        width: 18rem;
+        height: 6rem;
+    }
+    .college-logo {
+        width: 18rem;
+    }
+    .nav-bar-media-q {
+        display: block;
+        float: right;
+    }
+    .nav-bar-media-q-button button {
+       
+        display: none;
+        
+    }
+
+    .nav-bar-media-q-icon {
+        display: inline-block;
+        cursor: pointer;
+        padding: 1.1rem;
+        color: aliceblue;
+        margin-right: 1rem;
+        font-size: 20px;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 30px;
+        height: 3px;
+        background-color: hsl(0, 0%, 100%);
+        margin: 6px 0;
+        transition: 0.5s;
+    }
+
+    .change .bar1 {
+        background-color: #fb4f00;
+        transform: translate(0, 9px) rotate(-45deg);
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        background-color: #fb4f00;
+        transform: translate(0, -9px) rotate(45deg);
+    }
+
+    .nav-bar-media-q-button {
+        float: right;
+        margin-right: 2rem;
+        display:block;
+    }
+    
+    .nav-bar-media-q-button button:hover {
+        background-color: #ffb703;
+        color: #023047;
+    }
+
+    
+
+    .nav-bar-ul {
+       
+
+        height: fit-content;
+        position: absolute;
+        display: none;
+    }
+    .nav-bar-ul-show {
+        background-color: rgba(0, 0, 0, 0.726);
+        width:26rem;
+        height: fit-content;
+        position: absolute;
+        right: 0.1rem;
+        top: 5.7rem;
+        display: block;
+    }
+    .nav-bar-ul li:nth-child(even):hover .nav-bar-sub-ul {
+        padding: 0rem;
+        border-bottom:none;
+    }
+    .nav-bar-ul li:nth-child(odd):hover .nav-bar-sub-ul {
+
+        border-bottom:none;
+    }
+    .nav-bar-li {
+
+        border-bottom: 2px solid rgb(56, 56, 56);
+        display: block;
+    }
+    /* .nav-bar-sub-li{
+
+                        } */
+    .nav-bar-sub-ul{
+        width:max-content;
+       background-color:rgba(0, 0, 0, 0);
+        height: max-content;
+        position: relative;
+       
+
+        
+    
+    }
+    .nav-bar-sub-ul li{
+     padding:0.5rem;
+    
+    }
+
+    .nav-bar-li:nth-child(9) {
+        display: block;
+        padding-top:2.6rem;
+        padding-left:5.2rem ;
+       
     }
 }
 
@@ -300,3 +442,30 @@ nav {
     -ms-transform: rotate(90deg); /* IE 9 */
     transform: rotate(90deg);
 }
+
+
+
+  
+  @keyframes image{
+    0%{
+        
+        background-size:cover;
+     background-image:url(../images/peakpx.jpg);
+    }
+    20%{
+     background-image:url(../images/emilio-garcia-AWdCgDDedH0-unsplash.jpg);
+    }
+    40%{
+     background-image:url(../images/wwwwwww.jpg);
+    }
+    60%{
+     background-image:url(https://www.imagebee.org/sports/lionel-messi-backgrounds/lionel_messi-1-1920x1080.jpg);
+    }
+    80%{
+     background-image:url(../images/jannes-glas-0NaQQsLWLkA-unsplash.jpg);
+    }
+    100%{
+     background-image:url(../images/wp7758502-physical-education-wallpapers.jpg);
+    }
+}
+  
